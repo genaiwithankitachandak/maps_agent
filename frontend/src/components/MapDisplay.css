@@ -1,0 +1,182 @@
+.map-container {
+  width: 100%;
+  height: 60vh;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+  margin-top: 2rem;
+  border: 1px solid rgba(255,255,255,0.1);
+}
+
+.info-window-content {
+  padding: 12px;
+  max-width: 300px;
+  font-family: 'Inter', sans-serif;
+  color: #1a1a1a;
+}
+
+.info-window-content h3 {
+  margin: 0 0 8px 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #2b2b2b;
+}
+
+.category-badge {
+  display: inline-block;
+  background: #e0f2f1;
+  color: #00796b;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.address, .rating {
+  font-size: 0.9rem;
+  margin: 4px 0;
+  color: #555;
+}
+
+.match-reason-box {
+  margin-top: 12px;
+  background: #fff8e1;
+  border-left: 4px solid #ffca28;
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.match-reason-box strong {
+  display: block;
+  font-size: 0.85rem;
+  color: #f57f17;
+  margin-bottom: 4px;
+}
+
+.match-reason-box p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #424242;
+}
+
+/* Base styles for premium feel */
+body {
+  background-color: #f8fafc;
+  color: #0f172a;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 0.5rem;
+}
+
+.header p {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+.input-section {
+  background: white;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.input-group label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #475569;
+}
+
+.input-group input {
+  padding: 0.75rem 1rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 8px;
+  font-size: 1rem;
+  width: 250px;
+  transition: all 0.2s;
+}
+
+.input-group input:focus {
+  outline: none;
+  border-color: #3b82f6;
+  box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  height: 44px;
+  margin-top: 22px; /* aligns with inputs */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.btn-primary:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.2);
+}
+
+.btn-primary:disabled {
+  background: #94a3b8;
+  cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
+}
+
+.loading-state {
+  text-align: center;
+  margin: 3rem 0;
+  color: #64748b;
+  font-size: 1.1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.spinner {
+  width: 40px;
+  height: 40px;
+  border: 4px solid #e2e8f0;
+  border-top-color: #3b82f6;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

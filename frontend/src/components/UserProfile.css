@@ -1,0 +1,94 @@
+.profile-container {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+  border: 1px solid #e2e8f0;
+}
+
+.profile-container h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #1e293b;
+  border-bottom: 2px solid #f1f5f9;
+  padding-bottom: 0.5rem;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+.profile-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.profile-item.full-width {
+  grid-column: 1 / -1;
+}
+
+.profile-label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.profile-value {
+  font-size: 1rem;
+  color: #0f172a;
+  font-weight: 500;
+}
+
+.budget-badge {
+  color: #16a34a;
+  font-weight: 700;
+  background: #dcfce7;
+  padding: 2px 8px;
+  border-radius: 6px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tag {
+  padding: 4px 10px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.tag-interest {
+  background: #f0fdfa;
+  color: #0d9488;
+  border: 1px solid #ccfbf1;
+}
+
+.tag-diet {
+  background: #fdf4ff;
+  color: #c026d3;
+  border: 1px solid #fae8ff;
+}
+
+.tag-access {
+  background: #eff6ff;
+  color: #2563eb;
+  border: 1px solid #dbeafe;
+}
+
+.text-empty {
+  color: #94a3b8;
+  font-size: 0.9rem;
+  font-style: italic;
+}

@@ -1,0 +1,73 @@
+.funfact-card {
+  background: white;
+  border: 1px solid #cbd5e1;
+  border-radius: 12px;
+  padding: 1.5rem;
+  margin-top: 1rem;
+  color: #0f172a;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  grid-column: span 1;
+}
+
+.funfact-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+}
+
+.funfact-header h3 {
+  margin: 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #8b5cf6;
+  /* purple theme for fun facts */
+}
+
+.funfact-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.funfact-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0;
+  color: #1e293b;
+}
+
+.funfact-description {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #475569;
+  margin: 0;
+  background: #f5f3ff;
+  padding: 0.75rem;
+  border-radius: 8px;
+  border-left: 3px solid #8b5cf6;
+}
+
+.btn-more-fun-fact {
+  background: #f5f3ff;
+  color: #8b5cf6;
+  border: 1px solid #ddd6fe;
+  padding: 0.3rem 0.8rem;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-more-fun-fact:hover:not(:disabled) {
+  background: #ede9fe;
+  border-color: #c4b5fd;
+}
+
+.btn-more-fun-fact:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
